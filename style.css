@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+}
+
+body{
+    height: 100vh; 
+    width: 100vw; 
+    /* background-color:#006BFF ; */
+    /* background-color:#090040 ; */
+    background: linear-gradient(45deg,#090040 ,#006BFF);
+    
+}
+
+
+.navbar{
+    width: 88vw;
+    height: 10vh;  
+    margin: auto;
+    /* background-color: #ef2323; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-logo{
+    height: 100%;
+     width: 60vw;
+     display: flex;
+     align-items: center;
+     /* background-color:aqua; */
+     gap: 4px;
+}
+.logo{
+    height: 60px;
+    width: 60px;
+    background-image: url("logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* background-color: #ef2323 */
+   
+}
+.navsearch{
+    display: flex;
+    align-items: center;
+   
+}
+.searchbtn{
+    height: 5vmin;
+    width: 3vw;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    outline: none;
+    border:2px solid white;
+}
+.search{
+    height: 5vmin;
+    width: 30vw;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-left: 10px;
+    color: black;
+        border:2px solid white;
+}
+
+.describe {
+    display: flex
+}
+
+
+.hero{
+    width: 92vw;
+    height: 80vh;
+    margin: auto;
+    margin-top:2% ;
+    /* background-color: black; */
+    display: flex;
+   flex-wrap: wrap;
+}
+
+.show{
+    height: 65%;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 2%;
+    /* background-color: bisque; */
+}
+
+.container{
+     height: 65%;
+     width: 40%;
+     padding: 2% 2% 1% 4%;
+     /* background-color: aquamarine; */
+     display: flex;
+     flex-wrap: wrap;
+     gap: 2%;
+     
+}
+
+
+.box{
+    height: 22vh;
+    width: 10vw;
+    background-color: transparent;
+    /* background: linear-gradient(to bottom,#003285, #00A9FF); */
+    border: 1px solid #ffffff;
+  
+    border-radius: 10px;
+    padding-left: 2%;
+    padding-top: 5%;
+
+}
+.forecast{
+    height: 35%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background-color: cadetblue; */
+}
+.forecastbox{
+    height: 25vh;
+    width: 29vw;
+    background-color: transparent;
+
+    /* background: linear-gradient(to bottom,#003285, #00A9FF); */
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    padding: 2% 2% 2% 2%;
+    
+    
+}
+
+.place{
+    height: 100px;
+    width: 100%;
+    font-size: 200%;
+   /* background-color: aquamarine; */
+}
+.weatherimg{
+    height: 30vmin;
+    width: 30vmin;
+    background-size: cover;
+    
+
+}
+
+.temp{
+    height: 10vh;
+    width: 20vw;
+    background-size: cover;
+    font-size: 2em;
+   
+
+}
+
+.box .icon{
+    font-size: 5vmin;
+    padding-bottom: 5%;
+}
+
+
+@media (max-width:1024px){
+    body{
+       background: linear-gradient(120deg, #090040, #0045a0, #007bff);
+       height: auto;
+    }
+    .navbar{ 
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    width: 90vw;
+} 
+    .nav-logo{
+     height: 100%;
+     width: 80vw;
+    }
+.logo{
+    height: 80px;
+    width: 80px;
+}  
+.nav-logo h1{
+    font-size: 30px;
+}
+.search{
+     height: 8vmin;
+    width: 80vw;
+}
+.searchbtn{
+    width: 10vw;
+    height: 8vmin;
+    font-size: small;
+ 
+}
+.hero{
+    width: 90vw;
+    height: 280vh;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.show{
+    height: 25%;
+    width: 100%;
+} 
+.temp{
+    font-size: 1.5em;
+}
+.place{
+    font-size: 1.5rem;
+}
+.describe{
+    font-size: 1rem;
+}
+.container{
+     height: 32%;
+     width: 100%;     
+     
+}
+ 
+ .box{
+    height: 28vh;
+    width: 41vw;
+
+} 
+    
+
+.forecast{
+    height: 42%;
+    width: 100%;
+    flex-direction: column;
+    
+    gap: 10px;
+}
+ 
+  .forecastbox{
+    height: 31vh;
+    width: 85vw;  
+
+    padding-left: 5%;
+    padding-right: 5%;
+}
+    .forecast h1{
+        font-size: 2rem;
+    }
+      .forecast h3{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:600px) {
+   
+    .forecastbox{
+          padding-top: 8%;
+    }
+    .box{
+        padding-top: 15%;
+    }
+}

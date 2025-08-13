@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href = "style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+<body>
+    <!-- Navbar -->
+        <div class="navbar">
+            <div class="nav-logo">
+            <div class="logo"></div>
+            <h1>Weather Info</h1>
+            </div>
+            <div class="navsearch">
+                <input class="search" type="text" placeholder="search">
+               <button class="searchbtn"><i class="fa-brands fa-searchengin"></i></button> 
+            </div>
+        </div>
+        
+        <div class="hero">
+            <div class="show">
+                <div class="weatherimg"></div>
+                <div class="temp"><h1></h1></div>
+                <div class="place"><h1></h1></div>
+                <div class="describe">
+                    <h3 class="description"></h3>
+                    <h3 class="timezone"></h3>
+                </div>
+            </div>
+            <div class="container">
+            <div class="box">
+                <i class="fa-solid fa-temperature-full icon"></i>
+                <h2></h2>
+                <h4>feel like</h4>
+            </div>
+            <div class="box">
+                <i class="fas fa-tint icon"></i> 
+                <h2></h2>
+                <h4>Humidity</h4>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-wind icon"></i>
+                <h2></h2>
+                <h4>Wind Speed</h4>
+            </div>
+            <div class="box">
+                <i class="fas fa-tachometer-alt icon"></i>
+                <h2></h2>
+                <h4>Pressure</h4>
+            </div>
+
+            <div class="box">
+                <i class="fa-solid fa-temperature-arrow-up icon"></i>
+                 <h2></h2>
+                <h4>Max-Temprature</h4>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-temperature-arrow-down icon"></i>
+                 <h2></h2>
+                <h4>Min-Temprature</h4>
+            </div>
+            </div>
+            <div class="forecast">
+                <div class="forecastbox">
+                    <h1>Morning To Evening</h1>
+                    <h3 class="forecasttime"></h3>
+                    <h3 class="forecasttemp"></h3>
+                    <h3 class="forecastdescription"></h3>
+                </div>
+                <div class="forecastbox">
+                    <h1>Evening To Night</h1>
+                    <h3 class="forecasttime"></h3>
+                    <h3 class="forecasttemp"></h3>
+                    <h3 class="forecastdescription"></h3>
+                </div>
+                <div class="forecastbox">
+                    <h1>Night To Morning</h1>
+                    <h3 class ="forecasttime"></h3>
+                    <h3 class ="forecasttemp"></h3>
+                    <h3 class ="forecastdescription"></h3></div>
+            </div>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

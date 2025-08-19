@@ -45,22 +45,22 @@ const getweather = async (newplace = input.value) => {
     //6
     boxes[5].querySelector("h2").innerText = `${data.main.temp_min}°C`;
 
-    if (data.weather[0].description.includes("cloud")) {
-      weatherimg.style.backgroundImage = "url('cloudy.webp')";
-    } else if (data.weather[0].description.includes("clear")) {
-      weatherimg.style.backgroundImage = "url('clear.png')";
-    } else if (data.weather[0].description.includes("snow")) {
-      weatherimg.style.backgroundImage = "url('snowy.png')";
-    }
-    else if (data.weather[0].main.includes("wind")) {
-      weatherimg.style.backgroundImage = "url('windy.png')";
-    } else if (data.weather[0].main.includes("rain")) {
-      weatherimg.style.backgroundImage = "url('rainy.png')";
-    } else if (data.weather[0].main.includes("thunder")) {
-      weatherimg.style.backgroundImage = "url('thunderstorm.png')";
-    } else {
-      weatherimg.style.backgroundImage = "url('clear.jpg')";
-    }
+    if (data.weather[0].description.toLowerCase().includes("cloud")) {
+  weatherimg.style.backgroundImage = "url('cloudy.webp')";
+} else if (data.weather[0].description.toLowerCase().includes("clear")) {
+  weatherimg.style.backgroundImage = "url('clear.png')";
+} else if (data.weather[0].description.toLowerCase().includes("snow")) {
+  weatherimg.style.backgroundImage = "url('snowy.png')";
+} else if (data.weather[0].main.toLowerCase().includes("wind")) {
+  weatherimg.style.backgroundImage = "url('windy.png')";
+} else if (data.weather[0].main.toLowerCase().includes("rain")) {
+  weatherimg.style.backgroundImage = "url('rainy.png')";
+} else if (data.weather[0].main.toLowerCase().includes("thunder")) {
+  weatherimg.style.backgroundImage = "url('thunderstorm.png')";
+} else {
+  weatherimg.style.backgroundImage = "url('clear.jpg')";
+}
+
   } catch {
     alert("Wrong Country/City");
   }
